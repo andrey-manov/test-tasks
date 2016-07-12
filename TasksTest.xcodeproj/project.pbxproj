@@ -13,6 +13,9 @@
 		CE8A9FA11D3510CD005918BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A9F9F1D3510CD005918BF /* Main.storyboard */; };
 		CE8A9FA31D3510CD005918BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A9FA21D3510CD005918BF /* Assets.xcassets */; };
 		CE8A9FA61D3510CD005918BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8A9FA41D3510CD005918BF /* LaunchScreen.storyboard */; };
+		CE8A9FAF1D3511DB005918BF /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8A9FAE1D3511DB005918BF /* TestClass.m */; };
+		CECFBAFF1D352712005C75A4 /* ResourceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CECFBAFE1D352712005C75A4 /* ResourceUtils.m */; };
+		CECFBB021D3529EC005C75A4 /* WaP1.txt in Resources */ = {isa = PBXBuildFile; fileRef = CECFBB011D3529EC005C75A4 /* WaP1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		CE8A9FA21D3510CD005918BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8A9FA51D3510CD005918BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8A9FA71D3510CD005918BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8A9FAD1D3511DB005918BF /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		CE8A9FAE1D3511DB005918BF /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		CECFBAFD1D352712005C75A4 /* ResourceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceUtils.h; sourceTree = "<group>"; };
+		CECFBAFE1D352712005C75A4 /* ResourceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceUtils.m; sourceTree = "<group>"; };
+		CECFBB011D3529EC005C75A4 /* WaP1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WaP1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		CE8A9F951D3510CD005918BF /* TasksTest */ = {
 			isa = PBXGroup;
 			children = (
+				CECFBB001D3529EC005C75A4 /* Resources */,
 				CE8A9F991D3510CD005918BF /* AppDelegate.h */,
 				CE8A9F9A1D3510CD005918BF /* AppDelegate.m */,
 				CE8A9F9C1D3510CD005918BF /* ViewController.h */,
@@ -67,6 +76,10 @@
 				CE8A9FA41D3510CD005918BF /* LaunchScreen.storyboard */,
 				CE8A9FA71D3510CD005918BF /* Info.plist */,
 				CE8A9F961D3510CD005918BF /* Supporting Files */,
+				CE8A9FAD1D3511DB005918BF /* TestClass.h */,
+				CE8A9FAE1D3511DB005918BF /* TestClass.m */,
+				CECFBAFD1D352712005C75A4 /* ResourceUtils.h */,
+				CECFBAFE1D352712005C75A4 /* ResourceUtils.m */,
 			);
 			path = TasksTest;
 			sourceTree = "<group>";
@@ -77,6 +90,14 @@
 				CE8A9F971D3510CD005918BF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CECFBB001D3529EC005C75A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CECFBB011D3529EC005C75A4 /* WaP1.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +160,7 @@
 				CE8A9FA61D3510CD005918BF /* LaunchScreen.storyboard in Resources */,
 				CE8A9FA31D3510CD005918BF /* Assets.xcassets in Resources */,
 				CE8A9FA11D3510CD005918BF /* Main.storyboard in Resources */,
+				CECFBB021D3529EC005C75A4 /* WaP1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8A9FAF1D3511DB005918BF /* TestClass.m in Sources */,
+				CECFBAFF1D352712005C75A4 /* ResourceUtils.m in Sources */,
 				CE8A9F9E1D3510CD005918BF /* ViewController.m in Sources */,
 				CE8A9F9B1D3510CD005918BF /* AppDelegate.m in Sources */,
 				CE8A9F981D3510CD005918BF /* main.m in Sources */,
@@ -300,6 +324,7 @@
 				CE8A9FAC1D3510CD005918BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
