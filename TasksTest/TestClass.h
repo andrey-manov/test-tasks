@@ -13,3 +13,4 @@
 @end
 
 char mostFrequentCharacter(char* str, int size);
+char mostFrequentCharacterArch(char* str, int size);

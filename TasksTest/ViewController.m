@@ -74,15 +74,16 @@
         NSLog(@"data length %lu, sizeof u char %lu, sizeof array %lu", (unsigned long)dataLength, sizeof(unsigned char), (sizeof array));
         NSLog(@"size %lu %i", size, (int)size);
         
-//        char partToPrint[100];
-//        for(int i = 0; i<99; i++) {
-//            partToPrint[i] = array[i];
-//        }
-//        partToPrint[99] = '\0';
+        char partToPrint[100];
+        for(int i = 0; i<99; i++) {
+            partToPrint[i] = array[i];
+            NSLog(@"i: %d %x", i, array[i]);
+        }
+        partToPrint[99] = '\0';
         
-//        NSLog(@"%s", partToPrint);
-//        NSLog(@"=====");
-//        NSLog(@"%@",[NSString stringWithCString:partToPrint encoding:NSWindowsCP1251StringEncoding]);
+        NSLog(@"%s", partToPrint);
+        NSLog(@"=====");
+        NSLog(@"%@",[NSString stringWithCString:partToPrint encoding:NSWindowsCP1251StringEncoding]);
         
         //    NSString* d = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         //    LogDebug(@"Data::: %@", d);
@@ -94,8 +95,10 @@
 //        char string[] = "october";
 //        int strSize = 8;
         
-        char c = mostFrequentCharacter(array, (int)size);
+//        char c = mostFrequentCharacter(array, (int)size);
 //        char c = mostFrequentCharacter(string, strSize);
+        
+        mostFrequentCharacterArch(array, (int)size);
         
         NSDate* endDate = [NSDate date];
         NSLog(@"end %@", [formatter stringFromDate:endDate]);
