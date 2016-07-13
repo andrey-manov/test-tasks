@@ -1,48 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F9x-jg-PDB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Zjd-sz-iHg">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="F9x-jg-PDB" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Dae-Th-3lc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ztR-VO-r3b"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="0Ek-dW-Vea">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-eB-xBR">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMW-s0-Lam"/>
-                                </connections>
-                            </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Fj-Ul-DBI">
-                                <rect key="frame" x="290" y="257" width="20" height="20"/>
-                            </activityIndicatorView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-ch-I4z">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L23-xp-rmm">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1Fj-Ul-DBI">
+                                                <rect key="frame" x="290" y="50" width="20" height="20"/>
+                                            </activityIndicatorView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-eB-xBR">
+                                                <rect key="frame" x="235" y="78" width="131" height="30"/>
+                                                <state key="normal" title="charFrequencyTest"/>
+                                                <connections>
+                                                    <action selector="testCharFrequencyBtnPressed:" destination="F9x-jg-PDB" eventType="touchUpInside" id="HzO-Q0-m2D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa8-Pp-uCS">
+                                                <rect key="frame" x="223" y="116" width="154" height="30"/>
+                                                <state key="normal" title="charFrequencyArcTest"/>
+                                                <connections>
+                                                    <action selector="testCharFrequencyArcOptimizedBtnPressed:" destination="F9x-jg-PDB" eventType="touchUpInside" id="rqw-RQ-rFs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxz-XO-ZEc">
+                                                <rect key="frame" x="246" y="230" width="108" height="30"/>
+                                                <state key="normal" title="n&amp;(n-1) for u int"/>
+                                                <connections>
+                                                    <action selector="powOf2UnsignedBtnPressed:" destination="F9x-jg-PDB" eventType="touchUpInside" id="3kq-mq-qBX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP3-55-cnF">
+                                                <rect key="frame" x="202" y="154" width="196" height="30"/>
+                                                <state key="normal" title="charFrequency2ThreadsTest"/>
+                                                <connections>
+                                                    <action selector="testCharFrequency2ThreadsBtnPressed:" destination="F9x-jg-PDB" eventType="touchUpInside" id="k1z-lk-0XA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-zz-0kv">
+                                                <rect key="frame" x="252" y="192" width="96" height="30"/>
+                                                <state key="normal" title="n&amp;(n-1) for int"/>
+                                                <connections>
+                                                    <action selector="powOf2SignedBtnPressed:" destination="F9x-jg-PDB" eventType="touchUpInside" id="YjI-lU-mzm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Wgd-eB-xBR" firstAttribute="top" secondItem="1Fj-Ul-DBI" secondAttribute="bottom" constant="8" id="E3n-c6-QvA"/>
+                                            <constraint firstItem="Uxz-XO-ZEc" firstAttribute="top" secondItem="NXr-zz-0kv" secondAttribute="bottom" constant="8" id="FPc-QK-h8b"/>
+                                            <constraint firstItem="kP3-55-cnF" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="KUR-oc-esl"/>
+                                            <constraint firstItem="aa8-Pp-uCS" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="PRQ-T8-6mV"/>
+                                            <constraint firstItem="Wgd-eB-xBR" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="ULi-na-eln"/>
+                                            <constraint firstItem="NXr-zz-0kv" firstAttribute="top" secondItem="kP3-55-cnF" secondAttribute="bottom" constant="8" id="WWW-iL-b7W"/>
+                                            <constraint firstItem="NXr-zz-0kv" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="cr1-Wl-nI2"/>
+                                            <constraint firstItem="1Fj-Ul-DBI" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="ctm-Hp-RMK"/>
+                                            <constraint firstItem="1Fj-Ul-DBI" firstAttribute="top" secondItem="L23-xp-rmm" secondAttribute="top" constant="50" id="gXC-ts-1go"/>
+                                            <constraint firstItem="aa8-Pp-uCS" firstAttribute="top" secondItem="Wgd-eB-xBR" secondAttribute="bottom" constant="8" id="gXI-GC-azt"/>
+                                            <constraint firstAttribute="bottom" secondItem="Uxz-XO-ZEc" secondAttribute="bottom" constant="20" id="le6-qU-Hjl"/>
+                                            <constraint firstItem="Uxz-XO-ZEc" firstAttribute="centerX" secondItem="L23-xp-rmm" secondAttribute="centerX" id="qGC-ZS-kHb"/>
+                                            <constraint firstItem="kP3-55-cnF" firstAttribute="top" secondItem="aa8-Pp-uCS" secondAttribute="bottom" constant="8" id="qo7-m4-q7L"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="L23-xp-rmm" firstAttribute="leading" secondItem="Gpm-ch-I4z" secondAttribute="leading" id="QSk-1H-Y9g"/>
+                                    <constraint firstItem="L23-xp-rmm" firstAttribute="width" secondItem="Gpm-ch-I4z" secondAttribute="width" id="YvF-hG-fpn"/>
+                                    <constraint firstItem="L23-xp-rmm" firstAttribute="top" secondItem="Gpm-ch-I4z" secondAttribute="top" id="jsM-Pd-Mh4"/>
+                                    <constraint firstAttribute="bottom" secondItem="L23-xp-rmm" secondAttribute="bottom" id="vl2-e3-cG7"/>
+                                    <constraint firstAttribute="trailing" secondItem="L23-xp-rmm" secondAttribute="trailing" id="wl5-s6-TBe"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wgd-eB-xBR" firstAttribute="top" secondItem="1Fj-Ul-DBI" secondAttribute="bottom" constant="8" id="H9B-6t-OTi"/>
-                            <constraint firstItem="1Fj-Ul-DBI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WIc-IC-Eri"/>
-                            <constraint firstItem="Wgd-eB-xBR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i2v-db-f5C"/>
-                            <constraint firstItem="Wgd-eB-xBR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uke-2F-3B3"/>
+                            <constraint firstItem="Gpm-ch-I4z" firstAttribute="top" secondItem="0Ek-dW-Vea" secondAttribute="top" id="0fI-nr-FJF"/>
+                            <constraint firstAttribute="trailing" secondItem="Gpm-ch-I4z" secondAttribute="trailing" id="DIf-PE-F0Q"/>
+                            <constraint firstItem="Gpm-ch-I4z" firstAttribute="leading" secondItem="0Ek-dW-Vea" secondAttribute="leading" id="MZA-RB-8uF"/>
+                            <constraint firstItem="ztR-VO-r3b" firstAttribute="top" secondItem="Gpm-ch-I4z" secondAttribute="bottom" id="ozC-Ud-dcS"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="500"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="1Fj-Ul-DBI" id="C8s-nT-tZM"/>
-                        <outlet property="button" destination="Wgd-eB-xBR" id="EFg-f7-J1P"/>
+                        <outlet property="activityIndicator" destination="1Fj-Ul-DBI" id="6X5-mV-NmZ"/>
+                        <outlet property="charFrequency2ThreadsTestBtn" destination="kP3-55-cnF" id="Qrs-yF-A2c"/>
+                        <outlet property="charFrequencyArcOptimizedTestBtn" destination="aa8-Pp-uCS" id="Uhn-1B-ltX"/>
+                        <outlet property="charFrequencyTestBtn" destination="Wgd-eB-xBR" id="8aO-k4-EbB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbq-d2-5bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="422" y="415"/>
         </scene>
     </scenes>
 </document>
